@@ -25,7 +25,8 @@ char *sys_sbrk(int, int);
 int pause(int);
 int uptime(void);
 int sync(void);
-int ps(void);  // prototype for the new ps system call
+int ps(void);  // task 1 prototype for the new ps system call
+int sleep(int); // task 2 prototype for the new sleep system call
 
 // ulib.c
 int stat(const char *, struct stat *);

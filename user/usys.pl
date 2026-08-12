@@ -43,6 +43,7 @@ entry("sbrk");
 entry("pause");
 entry("uptime");
 entry("sync");
-entry("ps");   // new entry for ps
+entry("ps");   # task 1 new entry for ps
+entry("sleep"); # task 2 new entry for sleep
 
 
