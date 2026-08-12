@@ -7,6 +7,14 @@
 #include "proc.h"
 #include "vm.h"
 
+
+uint64
+sys_ps(void)
+{
+  procdump(); //print the process table to the console
+  return 0;
+}
+
 uint64
 sys_exit(void)
 {

@@ -103,6 +103,7 @@ extern uint64 sys_link(void);
 extern uint64 sys_mkdir(void);
 extern uint64 sys_close(void);
 extern uint64 sys_sync(void);
+extern uint64 sys_ps(void);      // new declaration
 
 // An array mapping syscall numbers from syscall.h
 // to the function that handles the system call.
@@ -130,8 +131,10 @@ static uint64 (*syscalls[])(void) = {
   [SYS_mkdir]   sys_mkdir,
   [SYS_close]   sys_close,
   [SYS_sync]    sys_sync,
+  [SYS_ps]      sys_ps,     // new table entry
   // clang-format on
 };
+
 
 void
 syscall(void)

@@ -126,6 +126,8 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h $K/param.h
 .PRECIOUS: %.o
 
 UPROGS=\
+	$U/_ps\
+	$U/_add_with_arg\
 	$U/_addDemo\
 	$U/_cat\
 	$U/_echo\
